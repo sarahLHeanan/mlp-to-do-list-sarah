@@ -15,13 +15,19 @@
 
 <body>
     <div class="container-fluid">
+        <header>
+            <section class="nav">
+                <x-nav />
+            </section>
+        </header>
+
         {{ $slot }}
     </div>
 </body>
 
 
 <footer>
-        Copyright here
-    </footer>
+    Copyright here
+</footer>
 
 </html>

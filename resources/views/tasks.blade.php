@@ -3,12 +3,6 @@
         MLP To Do List
     </x-slot>
 
-    <header>
-        <section class="hero">
-            Hero component here, logo
-        </section>
-    </header>
-
     <section class="main-content">
         <!-- @todo task list component -->
         
