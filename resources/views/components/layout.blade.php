@@ -27,7 +27,7 @@
 
 
 <footer>
-    Copyright here
+    Copyright &copy; 2024 All Rights Reserved.
 </footer>
 
 </html>

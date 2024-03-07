@@ -23,8 +23,43 @@ body {
     flex-direction: column;
 }
 
-.to-do-list {
+.task-list {
     background-color: white;
+    padding: 1em;
+    border-radius: 4px;
+    margin-top: 1em;
+
+    @media only screen and (min-width: 768px) {
+        margin-top: 0;
+        padding-bottom: 0.5em;
+    }
+}
+
+.task-list p {
+    text-align: center;
+}
+
+.task-list table th {
+    border-top: 0 !important;
+    border-bottom: 2px solid #ddd;
+}
+
+.task-list .icon {
+    width: 30px;
+}
+
+.glyphicon {
+    padding: 5px;
+    color: white;
+    font-size: 10px;
+}
+
+.glyphicon-ok {
+    background-color: #5cb85c;
+}
+
+.glyphicon-remove {
+    background-color: #d9534f;
 }
 
 footer {
