@@ -3,6 +3,8 @@
         MLP To Do List
     </x-slot>
 
+    @include('partials.flash-message')
+
     <section class="main-content tasks">
         <div>
             <div class="row">
