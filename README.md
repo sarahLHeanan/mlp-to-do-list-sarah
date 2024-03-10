@@ -8,5 +8,6 @@ Please run the application as follows
 - Tasks should disappear if completed or deleted and a flash message should appear at the top of the screen
 - Run unit test by executing `sail test`
 
+![MLP application](https://github.com/sarahLHeanan/mlp-to-do-list-sarah/assets/19517992/9f8d31fd-94c9-4ae2-b959-81ec9099de5a)
 
    
