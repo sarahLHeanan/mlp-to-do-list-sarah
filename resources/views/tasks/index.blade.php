@@ -10,7 +10,7 @@
                     <x-task-form />
                 </div>
                 <div class="col-md-7">
-                    <x-task-list />
+                    <x-task-list :tasks="$tasks"/>
                 </div>
             </div>
         </div>

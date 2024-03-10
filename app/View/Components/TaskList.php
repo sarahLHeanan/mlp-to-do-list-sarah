@@ -6,6 +6,10 @@ use Illuminate\View\Component;
 
 class TaskList extends Component
 {
+    public function __construct(public $tasks) {
+        $this->tasks = $tasks;
+    }
+
     /**
      * Get the view / contents that represent the component.
      *
