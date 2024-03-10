@@ -20,7 +20,7 @@
                         </form>
                     </td>            
                     <td class="icon">
-                    <form action="/tasks/{{ $task->id }}" method="POST" class="manage-task-form">
+                        <form action="/tasks/{{ $task->id }}" method="POST" class="manage-task-form">
                             @csrf
                             @method('DELETE')
                             <button type="submit" class="">

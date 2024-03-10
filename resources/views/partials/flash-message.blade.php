@@ -8,7 +8,7 @@
             <div class="alert alert-danger">
                 {{ session('error') }}
             </div>
-        @elseif($errors->any())
+        @elseif ($errors->any())
             <div class="alert alert-danger text-red-500">
                 <ul>
                     @foreach ($errors->all() as $error)

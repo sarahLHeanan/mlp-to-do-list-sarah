@@ -71,6 +71,6 @@ class TaskController extends Controller
         }  else {
             return back()->with('error', "Task could not be found");
         }
-
     }
+    
 }

@@ -8,5 +8,5 @@ Please run the application as follows
 - Tasks should disappear if completed or deleted and a flash message should appear at the top of the screen
 - Run unit test by executing `sail test`
 
-
+I did have some issues running Sail with PHP 8.2 and had to temporarily downgrade to 8.1 to update the dependency, hopefully it will run OK for anyone else but just letting you know.
    
