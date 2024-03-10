@@ -60,7 +60,6 @@ class TaskController extends Controller
      * Remove the specified resource from storage.
      *
      * @param Task $task
-     * @todo add soft deletes
      * @return \Illuminate\Http\Response
      */
     public function destroy(Task $task)
