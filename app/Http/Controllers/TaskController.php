@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Http\Requests\StoreTaskRequest;
+use App\Http\Requests\UpdateTaskRequest;
 use App\Models\Task;
 
 class TaskController extends Controller
@@ -23,11 +25,10 @@ class TaskController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param  StoreTaskRequest $request
      * @return \Illuminate\Http\Response
-     * @todo add validation
      */
-    public function store(Request $request)
+    public function store(StoreTaskRequest $request)
     {
         Task::firstOrCreate([
             'name' => $request->task,
@@ -39,11 +40,11 @@ class TaskController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param StoreTaskRequest $request
      * @param Task $task
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Task $task)
+    public function update(UpdateTaskRequest $request, Task $task)
     {
         if($task != null) {
             $task->complete = 1;
