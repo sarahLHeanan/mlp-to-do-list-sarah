@@ -20,7 +20,13 @@
                         </form>
                     </td>            
                     <td class="icon">
-                        <span class="glyphicon glyphicon-remove"></span>
+                    <form action="/tasks/{{ $task->id }}" method="POST" class="manage-task-form">
+                            @csrf
+                            @method('DELETE')
+                            <button type="submit" class="">
+                            <span class="glyphicon glyphicon-remove"></span>
+                            </button>
+                        </form>
                     </td>
                 </tr>
             @endforeach
