@@ -14,5 +14,5 @@ use App\Http\Controllers\TaskController;
 |
 */
 Route::resource('tasks', TaskController::class)->except([
-    'show', 'edit', 'update'
+    'show', 'edit',
 ]);

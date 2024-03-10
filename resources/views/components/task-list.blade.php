@@ -11,7 +11,13 @@
                     <td>{{ $task->id ?? '' }}</td>
                     <td>{{ $task->name ?? '' }}</td>
                     <td class="icon">
-                        <span class="glyphicon glyphicon-ok"></span>
+                        <form action="/tasks/{{ $task->id }}" method="POST" class="manage-task-form">
+                            @csrf
+                            @method('PUT')
+                            <button type="submit" class="">
+                                <span class="glyphicon glyphicon-ok"></span>
+                            </button>
+                        </form>
                     </td>            
                     <td class="icon">
                         <span class="glyphicon glyphicon-remove"></span>

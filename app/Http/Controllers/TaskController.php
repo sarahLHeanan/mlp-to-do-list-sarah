@@ -65,9 +65,16 @@ class TaskController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Task $task)
     {
-        //
+        if($task != null) {
+            $task->complete = 1;
+            $task->save();
+        } else {
+            return back()->with('error', "Task could not be found");
+        }
+
+        return back()->with('status', "Task $task->name completed successfully");
     }
 
     /**

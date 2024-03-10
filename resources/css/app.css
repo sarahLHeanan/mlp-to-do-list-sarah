@@ -23,6 +23,11 @@ body {
     flex-direction: column;
 }
 
+.manage-task-form button {
+    border: 0;
+    background-color: transparent;
+}
+
 .task-list {
     background-color: white;
     padding: 1em;
