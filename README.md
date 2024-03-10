@@ -1,23 +1,12 @@
-## MLP To-DO - Instructions
+## Sarah's Notes
 
-You must demonstrate the following abilities/skills: make models, controllers, migrations, HTML, CSS, blade, Git commits, blade templates, etc. 
+Please run the application as follows
+- Up Laravel Sail (or environment of your choice)
+- Migrate and seed the database: `sail artisan migrate:fresh --seed`
+- If using Sail, application will be available at http://localhost:8000/tasks
+- Use the form to create, complete and delete tasks. The view should be responsive.
+- Tasks should disappear if completed or deleted and a flash message should appear at the top of the screen
+- Run unit test by executing `sail test`
 
-**1. Fork this repo**
 
-**2. Build front-end**
-
-   Layout must be as follows:
-   
-   ![Alt text](assets/site-layout.png?raw=true "Title")
-   Please note that the above image and logo are in the 'assets' folder.
-
-**3. Build To-Do list functionality** 
-
-     A user should be able to
-     * Create a task.
-     * Delete a task.
-     * Mark a task as completed.
-     
-
-**Good Luck !!! Once done, please send us the link of your repo.**
    
