@@ -11,4 +11,14 @@ class Task extends Model
     use HasFactory, SoftDeletes;
 
     protected $fillable = ['name', 'complete'];
+
+    public function scopeComplete($query)
+    {
+        return $query->where('complete', 1);
+    }    
+    
+    public function scopeIncomplete($query)
+    {
+        return $query->where('complete', 0);
+    }
 }

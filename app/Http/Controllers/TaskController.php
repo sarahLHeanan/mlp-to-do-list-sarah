@@ -16,7 +16,7 @@ class TaskController extends Controller
      */
     public function index()
     {
-        $tasks = Task::where('complete', 0)->get();
+        $tasks = Task::incomplete()->get();
 
         return view('tasks.index')
             ->with('tasks', $tasks);

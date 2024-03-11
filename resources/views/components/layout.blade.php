@@ -27,7 +27,7 @@
 
 
 <footer>
-    Copyright &copy; 2024 All Rights Reserved.
+    Copyright &copy; {{ date("Y") }} All Rights Reserved.
 </footer>
 
 </html>
